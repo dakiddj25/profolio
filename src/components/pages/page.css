@@ -1,0 +1,23 @@
+
+.page > p {
+    margin-top: 8px;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    text-align: center;
+    
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .page > p{
+      word-wrap: normal;
+      padding-left: 10px;
+      padding-right: 10px;
+      
+    }
+  }
+  

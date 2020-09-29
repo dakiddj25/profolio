@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home,
+.AboutMe,
+.products,
+.SkillsHero,
+.sign-up {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.AboutMe {
+  background-image: url('./components/images/AboutMe.JPEG');
+  background-position: top center;
+  background-size: cover;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products {
+  background-image: url('./components/images/jones.JPG');
+  /* background-color: #cccccc;
+  background-position: 50% 20%;
+  */
+  background-position: center;
+  background-size: cover;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
 }
+
+.SkillsHero{
+  background-image: url('./components/images/JonesSkills.JPEG');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('./components/images/contact.JPG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "connect connect"
+    "phone email";
+ width: 100vw;
+ margin-top: 10%;
+ margin-bottom: 10%;
+ color: rgb(8, 8, 8);
+ font-size: 25px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+ 'Lucida Sans', Arial, sans-serif;
+ text-align: center;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+.connect { grid-area: connect; }
+.phone  { grid-area: phone; }
+.email { grid-area: email; }
+
+.Skills{
+  /* background-color: #FFEDE1; */
+  /* border: 1px solid white; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  height: 100vh;
+  width: 80%;
+}
+
+.page{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+/* .skill-name{
+  font-size: 10px;
+  font-weight: bolder;
+  }
+  
+  .skill-icon svg {
+      width: 60px;
+  } */
+
+  @media only screen and (max-width: 1199px){
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+     .thirdSection {
+      background-color: #FFEDE1;
+      /* padding-left: 5%; */
+     }
+
+     .AboutMe{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+     
+      } 
+  
