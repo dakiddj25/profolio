@@ -25,7 +25,7 @@ import Footer from '../Footer';
       <div className='email'>
         <GrMail/>
         <p>
-        <a href = 'mailto:johnjones@pursuit.org?subject=From%20JohnJones.org'>Johnjones@pursuit.org</a>
+        <a href = "mailto:johnjones@pursuit.org?subject=From%20JohnJones.org">Johnjones@pursuit.org</a>
         
         </p>
       </div>      
